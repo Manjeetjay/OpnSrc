@@ -9,6 +9,7 @@ import lombok.*;
 @Getter @Setter
 @NoArgsConstructor @AllArgsConstructor
 @Builder
+//@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class User {
 
     @Id

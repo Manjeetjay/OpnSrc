@@ -10,6 +10,7 @@ import java.time.Instant;
 @Getter @Setter
 @NoArgsConstructor @AllArgsConstructor
 @Builder
+//@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Repo {
 
     @Id

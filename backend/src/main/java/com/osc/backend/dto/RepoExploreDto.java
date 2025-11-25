@@ -2,11 +2,12 @@ package com.osc.backend.dto;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
 
 import java.time.Instant;
 
 @Data
-@Builder
+@Builder @Getter
 public class RepoExploreDto {
     private Long id;
     private Long githubId;
