@@ -10,4 +10,6 @@ import java.util.List;
 public interface RepoRepository extends JpaRepository<Repo, Long> {
     List<Repo> findByOwner(User owner);
     boolean existsByGithubIdAndOwner(Long githubId, User owner);
+    List<Repo> findAllByPublishedOnPlatformTrue();
+
 }
